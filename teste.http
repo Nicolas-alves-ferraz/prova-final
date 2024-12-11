@@ -1,0 +1,37 @@
+### Cadrasto de Alunos
+POST  http://localhost:5224/cadrastar/Aluno
+Content-Type: application/json
+
+{
+  "Nome": "Jair",
+  "Sobrenome": "Silva"
+};
+### Listagem de alunos
+GET http://localhost:5224/Listar/Aluno
+
+### Cadrastar o IMCs
+POST http://localhost:5224/Cadrastar/IMCs
+Content-Type: application/json
+
+{
+  "Peso": "87kg",
+  "Altura": "1.85m",
+  "idade": "25"
+};
+
+
+### Listar o IMCs
+GET http://localhost:5224/Listar/IMCs
+
+
+### Alterar o IMCs
+PUT http://localhost:5224//IMCs/1
+Content-Type: application/json
+
+{
+  "Peso": "77kg",
+  "Altura": "1.86m",
+  "idade": "26"
+}
+
+
